@@ -12,8 +12,10 @@ body,h1,h2,h3,h4,h5,h6,p{
     font-family: 'Barlow','Open Sans';
 }
 body{
-    background-color: var(--black);
-    color:var(--white);
+   
+    color: black;
+    background:linear-gradient(yellow,50%,rgb(22, 22, 185));
+   
 }
 .container{
     padding:1rem;
@@ -30,22 +32,25 @@ input{
 
 }
 input[type=submit]:hover{
-    background-color: var(--black);
+    background-color: orange;
     color: var(--white);
     border-color: var(--gray);
 }
 .emoji{
-    font-size:300%;
+    font-size:100%;
     width: 8rem;
     max-width: 8rem;
 }
-.alias{
-    text-transform: capitalize;
-    font-size: 125%;
-
+.emoji:hover{
+    border-radius: 50%;
+    /* border: 1px solid black; */
+    font-size: 300%;
+  
 }
+
 .desc{
-    font-size: 125%;
+    font-size: 100%;
+    color: red;
 }
 .desc::first-letter{
     text-transform: uppercase;
@@ -53,6 +58,12 @@ input[type=submit]:hover{
 table{
     border-collapse: collapse;
     width: 100%;
+}
+.aliases{
+    text-transform: uppercase;
+    font-size: 150%;
+    color:aqua;
+
 }
 tr,td{
     border-top: 1px solid var(--gray);
